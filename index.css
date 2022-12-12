@@ -1,0 +1,500 @@
+/* css reset  */
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* variables  */
+:root {
+    /* for background-color */
+    --bg-black: #000000;
+    --bg-white: #fff;
+    --bg-gradent-background: linear-gradient(90deg, rgba(213, 161, 255, 1) 50%, rgba(255, 255, 255, 1) 50%);
+
+    /* for text colors  */
+    --text-color: #000;
+
+    /* for font sizes  */
+    --f-size-center-last-a: .8rem;
+    --f-size-top-a: .9rem;
+    --f-size-center-a: .8rem;
+    --f-size-bottom-a: 1rem;
+
+}
+
+
+
+
+/* utility clases  */
+.line {
+    align-self: center;
+    margin: 0 9px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    height: 23px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* for center bar  */
+ul {
+    display: flex;
+
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li>a {
+    font-size: var(--f-size-center-a);
+    color: var(--text-color);
+    font-family: 'Circular-Loom';
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+ul>li>a:hover {
+    text-decoration: underline;
+}
+
+/* for america image in center bar  */
+.america {
+    height: 18px;
+    margin-right: 0.4rem;
+}
+
+/* for icons  */
+.for-icons>ul li>a>img {
+    height: 31px;
+}
+
+.for-icons>ul li>a>i {
+    font-size: 22px;
+}
+
+.for-icons>ul {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+/* for top bar  */
+
+.top-bar {
+    background-color: var(--text-color);
+    font-size: var(--f-size-top-a);
+    padding: 0.5em 1em;
+    text-align: center;
+    min-width: 100%;
+
+}
+
+.center>a {
+    color: #fff;
+    margin: 0;
+    font-family: sofia-pro, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+
+}
+
+/* for center bar  */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    background-color: var(--bg-white);
+    padding: 0 16px;
+    border-bottom: 1px solid #0000001f;
+    height: 30px;
+}
+
+.for-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    cursor: pointer;
+    transition: all .4s ease;
+
+}
+
+.for-right>span:hover {
+    text-decoration: underline;
+}
+
+.for-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-last>span {
+    font-size: var(--f-size-center-last-a);
+    opacity: .5;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.for-last>span:hover {
+    text-decoration: underline;
+}
+
+/* bottom section for header  */
+.main-bottom {
+    height: 192px;
+
+    background-image: var(--bg-gradent-background);
+}
+
+.main-bottom>.for-first-one {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+
+}
+
+.main-bottom>.for-first-one>.inner-first-one {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 1.5em;
+}
+
+.serach-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1 1;
+    padding: 0 2em;
+}
+
+.serach-input>input {
+    min-height: 48px;
+    border: 1px solid #2726263b;
+    padding: 0 4em;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 30px;
+    background: transparent;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.serach-input>input:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.serach-input>input:hover {
+    border: 1px solid rgb(34, 34, 34);
+    outline: none;
+}
+
+/* for icons  */
+.absolute {
+    position: absolute;
+    left: 44px;
+    top: 10px;
+    opacity: 0.8;
+    font-size: 30px;
+}
+
+/* second one 
+ */
+.main-second {
+    padding: 0 2.4% 1rem;
+
+}
+
+.second-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.for-menus {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.for-menus>ul>li>a {
+    font-size: var(--f-size-bottom-a);
+    font-weight: 700;
+}
+
+.for-menus>ul {
+    gap: 1.3rem;
+}
+
+/* for mobile hide  */
+.main-mobile {
+    display: none;
+}
+
+.main-search-input-for-mobile {
+    display: none;
+}
+
+.for-first-one-mobile {
+    display: none;
+}
+
+
+
+/*======================
+ for side bar
+  ==================== */
+/* .outer-main-mobile-menu{
+    position: relative;
+
+  } */
+
+.mobile-side-bar-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    left: 0;
+    z-index: 90;
+    height: 100%;
+    transition: transform .5s;
+    overflow: hidden;
+}
+
+.main-side-bar {
+    background-color: var(--bg-white);
+    width: calc(100% - 55px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    max-width: 375px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 9999999;
+    transform: translateX(-100%);
+    transition: all .4s ease;
+
+}
+
+/* first section  */
+.for-top-cross-icon {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    -webkit-position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    padding: 0 25px 0 15px;
+}
+
+.first-section {
+    display: flex;
+    padding: 2.5rem 1.5rem;
+    flex-direction: column;
+
+}
+.cross{
+    cursor: pointer;
+}
+
+.first-section>ul {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.first-section>ul>li>a {
+    cursor: pointer;
+    font-size: 18px;
+    min-height: 2.5rem;
+    padding: 6px 0;
+    line-height: 1.4;
+    transition: .3s;
+}
+
+.first-section>ul>li {
+    margin-bottom: 1rem;
+}
+
+.first-section>ul {
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.first-section>ul>li>a {
+    cursor: pointer;
+    font-size: 18px;
+    min-height: 2.5rem;
+    padding: 6px 0;
+    line-height: 1.4;
+    transition: .3s;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.information>a {
+    line-height: 1.4;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 18px;
+    min-height: 2.5rem;
+    color: var(--text-color);
+
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+}
+
+.right>img {
+    height: 18px;
+    margin-right: 0.4rem;
+}
+
+.right>p {
+    line-height: 1.4;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--text-color);
+
+}
+
+p {
+    line-height: 1.4;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.main-social-icons {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-social-icons>.for-form-main>h3 {
+    font-style: italic;
+    font-family: "Druk Text CY Web", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.for-form-main {}
+
+.for-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    margin-bottom: 3rem;
+}
+
+.for-form-main>.for-form>.left>input {
+    min-height: 48px;
+    border-radius: 6px;
+    border: 1px solid #d8d8d8;
+    transition: border-color .2s, box-shadow .4s;
+    box-sizing: border-box;
+    padding: 0 1em;
+    width: 100%;
+    line-height: 1.5;
+
+}
+
+.for-form #btn {
+
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.4em 1em 0.6em;
+    line-height: 1;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+    outline: none;
+    border: 1px solid #000;
+    font-weight: 500;
+    height: 2.75em;
+    background: #000;
+    color: #fff;
+}
+
+
+.for-inner>h3 {
+    font-style: italic;
+    font-family: "Druk Text CY Web", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.for-inner-social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.2rem;
+    gap: 1.3rem;
+}
+
+.for-inner-social-icons>a>i {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
